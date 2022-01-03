@@ -25,3 +25,23 @@ def Door(code):
     if digitCode == code:
             print("You hear a click. You entered the right code. The door unlocks")
             return(0)
+
+# produce menu number, code selection for item, first code location to test against and first code segment
+def OldEnglish(choice, codeLocation, codeValue):
+    print("")
+    print("You remove the painting from the wall and read the note.")
+    if choice == codeLocation:
+        print("In the note, you see a number " + str(codeValue) + ".")
+    else:
+        print("You find no code.")
+        print("")
+
+def FlowerPot(choice, codeLocation, codeValue):
+    print("")
+    print("A dark green flower pot holds roses that seem to have died long ago.")
+        if choice == codeLocation:
+                print("On the base of the flower pot, you see the number " + str(codeValue) + ".")
+                print("")
+        else:
+                print("You find nothing on the side of the pot. It is plain.")
+                print("")
